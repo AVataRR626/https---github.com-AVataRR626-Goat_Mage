@@ -49,6 +49,7 @@ GameObject:
   - 143: {fileID: 14347856}
   - 195: {fileID: 19551024}
   - 114: {fileID: 11485162}
+  - 114: {fileID: 11428276}
   m_Layer: 13
   m_Name: PlayerHunter_Piggie
   m_TagString: Untagged
@@ -87,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.87, y: -1.474, z: -7.028}
+  m_LocalPosition: {x: -6.0405264, y: 10.13, z: -2.219354}
   m_LocalScale: {x: 0.96181446, y: 0.9618138, z: 0.9618138}
   m_Children:
   - {fileID: 442410}
@@ -156,6 +157,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yRotMode: 0
+--- !u!114 &11428276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010ea386c066a0040a7ccebb93c8738f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 30
 --- !u!114 &11448264
 MonoBehaviour:
   m_ObjectHideFlags: 1

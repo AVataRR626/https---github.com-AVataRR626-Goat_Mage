@@ -10,6 +10,7 @@ public class SpellDetector : Singleton<SpellDetector>
     public Transform spellSpawnPoint;
     public SpellTotem myTotem;
     public Recipe discoveredSpell;
+    public int discoveredSpellIndex;
 
     //guarantee this will be always a singleton only - can't use the constructor!
     protected SpellDetector()
@@ -93,6 +94,7 @@ public class SpellDetector : Singleton<SpellDetector>
         Debug.Log("Detect Ingredients...");
 
         TallyIngredients();
+        discoveredSpellIndex = 0;
 
         foreach (Transform t in transform)
         {
@@ -113,10 +115,16 @@ public class SpellDetector : Singleton<SpellDetector>
 
                     Debug.Log("Spell Detector: DETECTED SPELL!! =>" + r.spellName);
                     if (myTotem != null)
+                    {
                         myTotem.currentSpell = r.spell;
 
+                    }
+
                     discoveredSpell = r;
+                    break;
                 }
+
+                discoveredSpellIndex++;
             }
         }
 

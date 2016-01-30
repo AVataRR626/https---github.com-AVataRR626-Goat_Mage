@@ -60,6 +60,12 @@ public class SpellBook : Singleton<SpellBook>
         
     }
 
+    public void GoToPage(int p)
+    {
+        CurrentPage = Mathf.Clamp(p, 1, Pages);
+        UpdateTexts();
+    }
+
     [ContextMenu("Previous Page")]
     public void PreviousPage()
     {

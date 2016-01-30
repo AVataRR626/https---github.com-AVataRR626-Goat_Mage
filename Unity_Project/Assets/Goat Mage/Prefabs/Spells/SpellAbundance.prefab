@@ -66,6 +66,7 @@ GameObject:
   - 135: {fileID: 13506868}
   - 23: {fileID: 2328308}
   - 54: {fileID: 5403428}
+  - 114: {fileID: 11497978}
   m_Layer: 0
   m_Name: SpellAbundance
   m_TagString: Untagged
@@ -188,7 +189,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.67, y: 6.2800007, z: -0.12}
+  m_LocalPosition: {x: -7.94, y: 6.2800007, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -212,7 +213,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.16, y: 6.2800007, z: -2.55}
+  m_LocalPosition: {x: 4.16, y: 6.2800007, z: -4.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -224,7 +225,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.44, y: 4.86, z: 4.9}
+  m_LocalPosition: {x: 5.108559, y: 11.13, z: -7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 460542}
@@ -257,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 6.2800007, z: -2.55}
+  m_LocalPosition: {x: -0.31, y: 6.2800007, z: -7.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -269,7 +270,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.37, y: 6.2800007, z: 2.82}
+  m_LocalPosition: {x: 3.32, y: 6.2800007, z: 3.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -281,7 +282,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.67, y: 6.2800007, z: 2.82}
+  m_LocalPosition: {x: -4.67, y: 6.2800007, z: -4.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -293,7 +294,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.16, y: 6.2800007, z: -0.12}
+  m_LocalPosition: {x: 8.6, y: 6.2800007, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -305,7 +306,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 6.2800007, z: 2.82}
+  m_LocalPosition: {x: -5.22, y: 6.2800007, z: 5.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420372}
@@ -1079,8 +1080,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1154,8 +1155,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1177,8 +1178,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1200,8 +1201,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1236,8 +1237,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1259,8 +1260,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1282,8 +1283,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
@@ -1305,13 +1306,25 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1
   spawnOnStart: 1
   clock: 0
+--- !u!114 &11497978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010ea386c066a0040a7ccebb93c8738f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0.5
 --- !u!114 &11499134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1341,8 +1354,8 @@ MonoBehaviour:
   - {fileID: 152452, guid: fc9611f3a8c58e7409a04f1cb3d271e9, type: 2}
   - {fileID: 123622, guid: 41419f6a00fd75243a96bd463ccdf7b1, type: 2}
   - {fileID: 137728, guid: 1ba1177e06c5a624dbf3ec132dfce611, type: 2}
-  spawnRange: {x: 5, y: 5, z: 0.5}
-  snap: {x: 5, y: 5, z: 5}
+  spawnRange: {x: 0, y: 0, z: 0}
+  snap: {x: 1, y: 1, z: 1}
   spawnCount: 1
   spawnInterval: 10
   continuousSpawn: 1

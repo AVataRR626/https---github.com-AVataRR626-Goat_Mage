@@ -63,7 +63,7 @@ public class RandomSpawner : MonoBehaviour
 		
 		Vector3 spawnOffset = new Vector3(snapX,snapY,snapZ);
 		
-		GameObject newSpawn = (GameObject) Instantiate (spawnList[(int)Random.Range (0,spawnList.Length-1)],transform.position + spawnOffset,transform.rotation);
+		GameObject newSpawn = (GameObject) Instantiate (spawnList[(int)Random.Range (0,spawnList.Length)],transform.position + spawnOffset,transform.rotation);
 
 		rndSoundPlayer.PlayRandSound();
 

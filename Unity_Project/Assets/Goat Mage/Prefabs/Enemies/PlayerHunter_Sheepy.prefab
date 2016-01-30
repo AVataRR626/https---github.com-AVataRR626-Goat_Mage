@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.52, y: -1.474, z: -9.32}
+  m_LocalPosition: {x: -0.96, y: -0.44, z: -6.96}
   m_LocalScale: {x: 0.96181446, y: 0.9618138, z: 0.9618138}
   m_Children:
   - {fileID: 462178}
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeScale: 20
-  bounceFactor: 0.05
+  bounceFactor: 0.075
   xBounce: 0
   yBounce: 1
   zBounce: 0

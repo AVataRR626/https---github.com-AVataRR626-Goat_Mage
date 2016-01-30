@@ -33,6 +33,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!1 &138028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487362}
+  - 33: {fileID: 3342366}
+  - 23: {fileID: 2366928}
+  m_Layer: 0
+  m_Name: Pedistal_centre_gfx (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
 --- !u!1 &193586
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,10 +88,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133696}
   m_LocalRotation: {x: 0.000000115202326, y: 0.7071068, z: 0.7071068, w: -0.000000115202326}
-  m_LocalPosition: {x: 81.43909, y: 34.112988, z: -11.642162}
+  m_LocalPosition: {x: 81.43909, y: 46.46, z: -11.642162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 486654}
+  - {fileID: 487362}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &486654
@@ -90,6 +108,44 @@ Transform:
   - {fileID: 472298}
   m_Father: {fileID: 481164}
   m_RootOrder: 0
+--- !u!4 &487362
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.015, y: -2.002, z: 6.254}
+  m_LocalScale: {x: 1.790133, y: 1.7901324, z: 4.636229}
+  m_Children: []
+  m_Father: {fileID: 481164}
+  m_RootOrder: 1
+--- !u!23 &2366928
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138028}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 2450f8be69d431144aa5c707698affdc, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2388654
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -149,6 +205,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193586}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &3342366
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138028}
+  m_Mesh: {fileID: 4300002, guid: 06a92307e98de304294f59c00a49661c, type: 3}
 --- !u!33 &3390968
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -194,7 +257,10 @@ MonoBehaviour:
   spawnLocation: {fileID: 472298}
   currentSpell: {fileID: 0}
   mySpellDetector: {fileID: 0}
-  timeCredit: 10
+  readyIndicator: {fileID: 2366928}
+  notReadyColour: {r: 1, g: 1, b: 1, a: 1}
+  readyColour: {r: 0, g: 1, b: 0, a: 1}
+  timeCredit: 30
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

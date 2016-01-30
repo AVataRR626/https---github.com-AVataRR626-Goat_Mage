@@ -29,7 +29,7 @@ public class Carry : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit coll)
     {
-        Debug.Log("Carry: HIT:" + coll.gameObject.name);
+        //Debug.Log("Carry: HIT:" + coll.gameObject.name);
 
         //handle pickups
         GenericPickup pup = coll.gameObject.GetComponent<GenericPickup>();

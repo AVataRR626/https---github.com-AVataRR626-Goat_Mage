@@ -1,15 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Spell : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+public class Spell : MonoBehaviour
+{
+    public string spellName;
+    public GameObject spellEffectObject;//the "spell" object that gets spawned when this is triggered...
+    public int[] recepie;//recepie to make this spell.
 }

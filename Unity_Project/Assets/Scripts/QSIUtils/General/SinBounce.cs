@@ -8,13 +8,16 @@ public class SinBounce : MonoBehaviour
 	public bool xBounce = false;
 	public bool yBounce = true;
 	public bool zBounce = false;
+    public float bounceClock;
 
-	public Vector3 offset = new Vector3(0,3,0);
+
+    public Vector3 offset = new Vector3(0,3,0);
 
 	public Transform anchor;
 	private Vector3 bounce;
-	private float bounceClock;
+	
 	private Vector3 originalPos;
+    private Vector3 prevPos;
 
 	// Use this for initialization
 	void Start () 
@@ -28,8 +31,10 @@ public class SinBounce : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-
-		bounceClock += Time.deltaTime * timeScale;
+        if (transform.position != prevPos)
+            bounceClock += Time.deltaTime * timeScale;
+        else
+            bounceClock = 0;
 
 		if(xBounce)
 			bounce.x = Mathf.Sin (bounceClock)*bounceFactor;
@@ -48,6 +53,8 @@ public class SinBounce : MonoBehaviour
 			baseLoc = originalPos;
 
 		transform.position = baseLoc + offset + bounce;
-	
-	}
+
+        prevPos = transform.position;
+
+    }
 }

@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 06a92307e98de304294f59c00a49661c
+timeCreated: 1454140917
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Blueprint
+    100002: FenceLines_1_N
+    100004: FenceLines_2_NE
+    100006: FenceLines_3_SE
+    100008: FenceLines_4_SW
+    100010: FenceLines_5_NW
+    100012: Main_Plaform
+    100014: OuterWalls
+    100016: Pedistal_1
+    100018: Pedistal_1_Center
+    100020: Pedistal_2
+    100022: Pedistal_2_Center
+    100024: Pedistal_3_Center_S
+    100026: Pedistal_3_S
+    100028: Pedistal_4
+    100030: Pedistal_4_Center
+    100032: Pedistal_5
+    100034: Pedistal_5_Center
+    100036: Resource_1_N
+    100038: Resource_2_NE
+    100040: Resource_3_SE
+    100042: Resource_4_SW
+    100044: Resource_5_NW
+    100046: //RootNode
+    400000: Blueprint
+    400002: FenceLines_1_N
+    400004: FenceLines_2_NE
+    400006: FenceLines_3_SE
+    400008: FenceLines_4_SW
+    400010: FenceLines_5_NW
+    400012: Main_Plaform
+    400014: OuterWalls
+    400016: Pedistal_1
+    400018: Pedistal_1_Center
+    400020: Pedistal_2
+    400022: Pedistal_2_Center
+    400024: Pedistal_3_Center_S
+    400026: Pedistal_3_S
+    400028: Pedistal_4
+    400030: Pedistal_4_Center
+    400032: Pedistal_5
+    400034: Pedistal_5_Center
+    400036: Resource_1_N
+    400038: Resource_2_NE
+    400040: Resource_3_SE
+    400042: Resource_4_SW
+    400044: Resource_5_NW
+    400046: //RootNode
+    2300000: Blueprint
+    2300002: FenceLines_1_N
+    2300004: FenceLines_2_NE
+    2300006: FenceLines_3_SE
+    2300008: FenceLines_4_SW
+    2300010: FenceLines_5_NW
+    2300012: Main_Plaform
+    2300014: OuterWalls
+    2300016: Pedistal_1
+    2300018: Pedistal_1_Center
+    2300020: Pedistal_2
+    2300022: Pedistal_2_Center
+    2300024: Pedistal_3_Center_S
+    2300026: Pedistal_3_S
+    2300028: Pedistal_4
+    2300030: Pedistal_4_Center
+    2300032: Pedistal_5
+    2300034: Pedistal_5_Center
+    2300036: Resource_1_N
+    2300038: Resource_2_NE
+    2300040: Resource_3_SE
+    2300042: Resource_4_SW
+    2300044: Resource_5_NW
+    3300000: Blueprint
+    3300002: FenceLines_1_N
+    3300004: FenceLines_2_NE
+    3300006: FenceLines_3_SE
+    3300008: FenceLines_4_SW
+    3300010: FenceLines_5_NW
+    3300012: Main_Plaform
+    3300014: OuterWalls
+    3300016: Pedistal_1
+    3300018: Pedistal_1_Center
+    3300020: Pedistal_2
+    3300022: Pedistal_2_Center
+    3300024: Pedistal_3_Center_S
+    3300026: Pedistal_3_S
+    3300028: Pedistal_4
+    3300030: Pedistal_4_Center
+    3300032: Pedistal_5
+    3300034: Pedistal_5_Center
+    3300036: Resource_1_N
+    3300038: Resource_2_NE
+    3300040: Resource_3_SE
+    3300042: Resource_4_SW
+    3300044: Resource_5_NW
+    4300000: Pedistal_5_Center
+    4300002: Pedistal_1_Center
+    4300004: Pedistal_5
+    4300006: Pedistal_1
+    4300008: Pedistal_2
+    4300010: Pedistal_2_Center
+    4300012: Pedistal_4_Center
+    4300014: Pedistal_4
+    4300016: Pedistal_3_Center_S
+    4300018: Resource_5_NW
+    4300020: Resource_1_N
+    4300022: Resource_2_NE
+    4300024: Resource_3_SE
+    4300026: Resource_4_SW
+    4300028: FenceLines_3_SE
+    4300030: FenceLines_2_NE
+    4300032: FenceLines_1_N
+    4300034: FenceLines_5_NW
+    4300036: FenceLines_4_SW
+    4300038: OuterWalls
+    4300040: Pedistal_3_S
+    4300042: Main_Plaform
+    4300044: Blueprint
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

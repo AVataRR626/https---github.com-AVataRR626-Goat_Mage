@@ -14,9 +14,8 @@ public class UpdateTimeBar : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-        //TODO get values from game manager
-        //TimeMax = GameManager.GetGameDuration();
-        //TimeValue = Mathf.Clamp(GameManager.GetTimeLeft(),0, TimeMax);
+        TimeMax = LavaManager.Instance.GameBaseDuration;
+	    TimeValue = TimeMax - (TimeMax*LavaManager.Instance.TimeCompletion);
 
         //set values to their objects.
 	    Text.text = DisplayText + TimeValue.ToString("F2");

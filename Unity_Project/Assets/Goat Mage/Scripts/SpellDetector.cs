@@ -20,7 +20,13 @@ public class SpellDetector : Singleton<SpellDetector>
     void Start()
     {
         if (myAltars == null)
+        {
             myAltars = FindObjectsOfType<Pedestal>();
+        }
+        else if (myAltars.Length < 5)
+        {
+            myAltars = FindObjectsOfType<Pedestal>();
+        }
 
         ingredientTally = new int[4];
 
@@ -139,6 +145,19 @@ public class SpellDetector : Singleton<SpellDetector>
             {
                 tally++;
             }
+        }
+
+        return tally;
+    }
+
+    public int GetActiveAltarCount()
+    {
+        int tally = 0;
+
+        for(int i = 0; i < myAltars.Length; i++)
+        {
+            if (GetAltarStatus(i))
+                tally++;
         }
 
         return tally;

@@ -14,6 +14,7 @@ public class QSICharConn : MonoBehaviour
 	public float jumpDelay = 0.25f;
 	public bool lockX = false;
 	public bool lockZ = false;
+    public bool invertControls = false;
 	public LayerMask terrainMask;
 	public LayerMask characterMask;
 	public Vector3 horizontalMovement = new Vector3();
@@ -168,7 +169,10 @@ public class QSICharConn : MonoBehaviour
 			myAnim.animationParams.moveSpeed = currentSpeed;
 		}
 
-		myConn.Move (Time.deltaTime * moveSpeed * horizontalMovement);
+        if (invertControls)
+            horizontalMovement *= -1;
+
+        myConn.Move (Time.deltaTime * moveSpeed * horizontalMovement);
 
 	}
 

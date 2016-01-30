@@ -51,9 +51,10 @@ public class QSICharConn : MonoBehaviour
 
 		UtilityRun();
 		FaceButtons ();
+        BumperControler();
 
-		//can't move while attacking.
-		if(movable)
+        //can't move while attacking.
+        if (movable)
 		{	
 			HorizontalMove();
 		}
@@ -123,6 +124,17 @@ public class QSICharConn : MonoBehaviour
 		return Physics.CheckCapsule(transform.position,transform.position + new Vector3(0,-(myConn.height/2),0),0.5f,terrainMask);
 		
 	}
+
+    void BumperControler()
+    {
+        var inputDevice = InputManager.Devices[playerNumber];
+
+        if (inputDevice.LeftBumper.WasPressed)
+            SpellBook.Instance.PreviousPage();
+
+        if (inputDevice.RightBumper.WasPressed)
+            SpellBook.Instance.NextPage();
+    }
 
 	void HorizontalMove()
 	{

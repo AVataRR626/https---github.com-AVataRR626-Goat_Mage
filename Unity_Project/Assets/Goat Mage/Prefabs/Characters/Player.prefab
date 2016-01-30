@@ -67,6 +67,7 @@ GameObject:
   - 114: {fileID: 11424774}
   - 114: {fileID: 11482536}
   - 114: {fileID: 11441740}
+  - 114: {fileID: 11485088}
   m_Layer: 13
   m_Name: Player
   m_TagString: Untagged
@@ -93,7 +94,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.788031, y: 0.94, z: 4.748849}
+  m_LocalPosition: {x: 6.43, y: 0.94, z: -0.07}
   m_LocalScale: {x: 0.37370172, y: 0.37370172, z: 0.37370172}
   m_Children:
   - {fileID: 493138}
@@ -120,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.65, z: 0}
+  m_LocalPosition: {x: 0, y: 2.33, z: 0}
   m_LocalScale: {x: 2.675931, y: 2.675931, z: 2.675931}
   m_Children: []
   m_Father: {fileID: 443624}
@@ -326,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupNode: {fileID: 493138}
   pickupTag: Pickup
-  dropForce: {x: 0, y: 10, z: 0}
+  dropForce: {x: 0, y: 10, z: 10}
   dropColliderDelay: 0.15
 --- !u!114 &11451998
 MonoBehaviour:
@@ -354,6 +355,17 @@ MonoBehaviour:
   maxHealth: 20
   health: 10
   deathSpawnList: []
+--- !u!114 &11485088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5433cf46d98387a4ab95b3502fe37e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &13646252
 CapsuleCollider:
   m_ObjectHideFlags: 1

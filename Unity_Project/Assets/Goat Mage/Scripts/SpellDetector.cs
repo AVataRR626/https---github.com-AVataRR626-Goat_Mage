@@ -9,16 +9,17 @@ public class SpellDetector : Singleton<SpellDetector>
     public int[] ingredientTally;
     public Transform spellSpawnPoint;
     public SpellTotem myTotem;
+    public Recipe discoveredSpell;
 
     //guarantee this will be always a singleton only - can't use the constructor!
     protected SpellDetector()
     {
-        
+
     }
 
     void Start()
     {
-        if(myAltars == null)
+        if (myAltars == null)
             myAltars = FindObjectsOfType<Pedestal>();
 
         ingredientTally = new int[4];
@@ -29,24 +30,24 @@ public class SpellDetector : Singleton<SpellDetector>
 
     void Update()
     {
-        if(IngredientCount() == 5)
+        if (IngredientCount() == 5)
             DetectSpells();
     }
 
 
     void TallyIngredients()
-    {   
+    {
 
         for (int i = 0; i < ingredientTally.Length; i++)
             ingredientTally[i] = 0;
 
         foreach (Pedestal a in myAltars)
         {
-            if(a.myItem != null)
+            if (a.myItem != null)
             {
                 Debug.Log(name + " myItem: " + a.myItem.type);
 
-                if(a.myItem.type == "Book")
+                if (a.myItem.type == "Book")
                 {
                     ingredientTally[0]++;
                 }
@@ -69,15 +70,17 @@ public class SpellDetector : Singleton<SpellDetector>
         }
     }
 
-    /*
-    public Recepie GetRecepie(int i)
+    
+    public Recipe GetRecipe(int i)
     {
-        Recepie result;
+        return transform.GetChild(i).GetComponent<Recipe>();
+    }
 
+    public int GetRecipeCount()
+    {
+        return transform.childCount;
 
-
-        //return result;
-    }*/
+    }
 
     void DetectSpells()
     {
@@ -87,7 +90,7 @@ public class SpellDetector : Singleton<SpellDetector>
 
         foreach (Transform t in transform)
         {
-            Recepie r = t.GetComponent<Recepie>();
+            Recipe r = t.GetComponent<Recipe>();
 
             if (r != null)
             {
@@ -101,15 +104,15 @@ public class SpellDetector : Singleton<SpellDetector>
 
                 if(success)
                 {
+
+                    Debug.Log("Spell Detector: DETECTED SPELL!! =>" + r.spellName);
                     if (myTotem != null)
                         myTotem.currentSpell = r.spell;
 
-                    DestroyIngredients();
+                    discoveredSpell = r;
                 }
             }
         }
-
-        DestroyIngredients();
 
     }
 

@@ -13,6 +13,8 @@ public class UIManager : Singleton<UIManager>
     public GameObject PausePanel;
     public GameObject GameOverPanel;
 
+    public GameObject[] Spawners;
+
     public UIState State;
 
     #region Blurring
@@ -86,6 +88,10 @@ public class UIManager : Singleton<UIManager>
     {
         DeactivateAllPanels();
         SetState(UIState.GameHud);
+        foreach(GameObject go in Spawners)
+        {
+            go.SetActive(true);
+        }
         //TODO GameManager.Instance.NewGame();
     }
 

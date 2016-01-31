@@ -20,6 +20,8 @@ public class Pedestal : MonoBehaviour
 	    if(myItem != null)
         {
             Pickup(myItem);
+
+            myItem.GetComponent<AutokillTimer>().timer = 30;
         }
 	}
 

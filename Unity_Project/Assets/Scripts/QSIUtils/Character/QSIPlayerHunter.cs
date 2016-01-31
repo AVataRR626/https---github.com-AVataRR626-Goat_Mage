@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent(typeof(NavMeshAgent))]
 public class QSIPlayerHunter : MonoBehaviour
 {
+    public float damageDistance = 1;
+    public float damage = 0.25f;
     public string targetTag = "Player";
     public GameObject target;
 
@@ -25,9 +27,17 @@ public class QSIPlayerHunter : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-	    
-        if(target != null)
+
+        if (target != null)
+        {
             navAgent.destination = target.transform.position;
+
+            if(Vector3.Distance(target.transform.position,transform.position) <= damageDistance)
+            {
+                QSIKillable k = target.GetComponent<QSIKillable>();
+                k.Damage(damage);
+            }
+        }
         else
             target = GenUtils.FindClosestWithTag(transform.position, targetTag);
     }

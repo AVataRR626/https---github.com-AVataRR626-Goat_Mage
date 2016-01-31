@@ -72,6 +72,10 @@ public class Carry : MonoBehaviour
             myPickup.transform.parent = null;
             myPickup = null;
 
+            AutokillTimer a = myPickup.GetComponent<AutokillTimer>();
+            if(a != null)
+                a.timer = 30;
+
         }
     }
 
@@ -95,7 +99,8 @@ public class Carry : MonoBehaviour
             c.enabled = false;
 
             myPickup = pickup;
-            
+
+                        
 
         }
     }

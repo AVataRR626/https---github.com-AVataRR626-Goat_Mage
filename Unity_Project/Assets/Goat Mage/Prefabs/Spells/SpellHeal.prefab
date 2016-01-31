@@ -14,6 +14,7 @@ GameObject:
   - 54: {fileID: 5403428}
   - 114: {fileID: 11417032}
   - 114: {fileID: 11447322}
+  - 114: {fileID: 11434278}
   m_Layer: 0
   m_Name: SpellHeal
   m_TagString: Untagged
@@ -93,6 +94,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBonus: 10
+--- !u!114 &11434278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de84dc45e224544f924f2c71991d1d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnObject: {fileID: 102614, guid: a204adedc0af5f846b1b825e1bb1ab0e, type: 2}
+  spawnCount: 1
+  spawnSwitch: 1
+  spreadCoefficient: 1
+  spawnClock: 0
+  spawnInterval: 0
+  oneShot: 1
+  randomClockOffset: 0
+  randomIntervalOffset: 0
 --- !u!114 &11447322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,6 +157,30 @@ Prefab:
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 52f417e32b4b43d4399d8ef616c2eb63, type: 3}
+    - target: {fileID: 0}
+      propertyPath: oneShot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnObject
+      value: 
+      objectReference: {fileID: 102614, guid: a204adedc0af5f846b1b825e1bb1ab0e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146230}

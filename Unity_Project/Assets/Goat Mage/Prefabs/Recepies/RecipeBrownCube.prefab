@@ -39,8 +39,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f767b8d4348b5542bfcece89bb05db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellName: Brown Cube
-  spell: {fileID: 170698, guid: d57629603c6102f42b89fb1006acb778, type: 2}
+  spellName: PartyTime
+  spell: {fileID: 146230, guid: 6b1b1fa4d24927e46ae98eef1f58f2b1, type: 2}
   ingredients: 02000000000000000000000003000000
   discovered: 0
 --- !u!1001 &100100000
@@ -54,6 +54,10 @@ Prefab:
       propertyPath: spell
       value: 
       objectReference: {fileID: 170698, guid: d57629603c6102f42b89fb1006acb778, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: RecipePartyTime
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142602}
